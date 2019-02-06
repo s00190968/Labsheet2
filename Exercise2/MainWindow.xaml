@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Stack Panel" Height="450" Width="800">
     <Grid>
         <StackPanel Orientation="Horizontal">
             <Button Content="Button1" Height="50" Width="200" FontSize="12" Margin="10" Padding="10"/>
