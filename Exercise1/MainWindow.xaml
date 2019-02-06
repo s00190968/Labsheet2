@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:Exercise1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
+        <Button Grid.Row="0" Grid.Column="0" Content="Click here!"></Button>
+        <TextBlock Background="Green" Grid.Column="1" Grid.Row="1" Text="Test" Grid.ColumnSpan="3"></TextBlock>
+        <TextBlock Background="Blue" Grid.Column="1" Grid.Row="2" Text="Test" Grid.RowSpan="2"></TextBlock>
+
     </Grid>
 </Window>
